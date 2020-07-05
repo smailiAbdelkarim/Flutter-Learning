@@ -22,7 +22,18 @@ class HomeScreen extends StatelessWidget{
          color: Colors.lightBlueAccent,  // background color of my container
          margin: EdgeInsets.all(50),  // take 50 from all directions
          padding: EdgeInsets.all(25),  // simple padding
-         child: Text("Smaili abdelkarim"),
+         width: 400,
+         child: Text("Smaili abdelkarim",
+           textAlign: TextAlign.center,
+           style: TextStyle(
+               color: Colors.white,
+               fontSize: 20,
+               fontWeight: FontWeight.bold,
+               letterSpacing: 2,
+               decoration: TextDecoration.underline,
+
+           ),
+         ),
        ),
      );
   }
