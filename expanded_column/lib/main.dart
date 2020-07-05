@@ -18,8 +18,12 @@ class HomeScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
      return Scaffold(
+       appBar: AppBar(
+         title:Text("welcome to flutter") ,
+         centerTitle: true,
+       ),
        body : Container(
-         color: Colors.lightBlueAccent,  // background color of my container
+         color: Colors.red,  // background color of my container
          margin: EdgeInsets.all(50),  // take 50 from all directions
          padding: EdgeInsets.all(25),  // simple padding
          width: 400,
