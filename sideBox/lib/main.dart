@@ -18,49 +18,53 @@ class homePage extends StatelessWidget{
   Widget build(BuildContext context) {
             
             return Scaffold(
-              body: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  SizedBox(
-                    height:80 ,
-                    width: 80,
-                    child: Container(
-                      color:Colors.purple
-                    ),
-                    ),
-                    SizedBox(
-                    height:80 ,
-                    width: 80,
-                    child: Container(
-                      color:Colors.red
-                    ),
-                    ),
-                    SizedBox(
-                    height:80 ,
-                    width: 80,
-                    child: Container(
-                      color:Colors.green
-                    ),
-                    )
-
-
-                ]
-              
-              
-              
-              
-              
-              
-              ,),
-              appBar: AppBar(
-              centerTitle: true,
-              title: Text("Welocome to flutter",
-              style:TextStyle(
-                  fontWeight:FontWeight.bold,
-                   )
+                appBar: AppBar(
+                  title: Text("welcome to flutter",
+                  ),
+                  centerTitle: true,
                 ),
-              ),
-            );
+                body:Center(
+                  child:Stack(
+                  alignment: Alignment.center,
+                  children: <Widget>[
+                      SizedBox(
+                        width: 210,
+                        height:210,
+                        child:Container(
+                            color:Colors.green
+                            ,)
+                       ,),
+                       SizedBox(
+                        width: 140,
+                        height:140,
+                        child:Container(
+                            color:Colors.yellow
+                            ,)
+                       ,),
+                       SizedBox(
+                        width: 70,
+                        height:70,
+                        child:Container(
+                            color:Colors.red
+                            ,)
+                       ,)
+
+
+
+                  ] 
+                
+                
+                
+                ,) 
+                
+                
+                
+                
+                
+                
+                ,)
+              );
+            
   }
 
 }
