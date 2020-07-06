@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget{
      return Scaffold(
        appBar: AppBar(
          title:Text("welcome to flutter",
-         style: textStyling()) ,
+       ,) ,
          centerTitle: true,
        ),
        body: Column(
