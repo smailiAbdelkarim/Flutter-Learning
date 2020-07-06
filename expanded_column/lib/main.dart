@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
+import 'stylee.dart';
+
 
 main(){
   runApp(MyApp());
@@ -19,26 +20,45 @@ class HomeScreen extends StatelessWidget{
   Widget build(BuildContext context) {
      return Scaffold(
        appBar: AppBar(
-         title:Text("welcome to flutter") ,
+         title:Text("welcome to flutter",
+         style: textStyling()) ,
          centerTitle: true,
        ),
-       body : Container(
-         color: Colors.red,  // background color of my container
-         margin: EdgeInsets.all(50),  // take 50 from all directions
-         padding: EdgeInsets.all(25),  // simple padding
-         width: 400,
-         child: Text("Smaili abdelkarim",
-           textAlign: TextAlign.center,
-           style: TextStyle(
-               color: Colors.white,
-               fontSize: 20,
-               fontWeight: FontWeight.bold,
-               letterSpacing: 2,
-               decoration: TextDecoration.underline,
+       body: Column(
+         
+         children: <Widget>[
+            Container(
+              width: double.infinity,
+              height: 50,
+              color: Colors.red,
+            ),
+           Container(
+             width: double.infinity,
+             height: 50,
+             color: Colors.green,
+           ),
+           Container(
+             width: double.infinity,
+             height: 50,
+             color: Colors.blue,
+           ),
+           Container(
+             width: double.infinity,
+             height: 50,
+             color: Colors.yellowAccent,
+           ),
+           Expanded(
+             child: Container(
+               color:Colors.black,
+               width: double.infinity,
+             ),
+             
+             
 
            ),
-         ),
+         ],
        ),
+
      );
   }
 
