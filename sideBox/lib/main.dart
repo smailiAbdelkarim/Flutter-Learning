@@ -18,6 +18,40 @@ class homePage extends StatelessWidget{
   Widget build(BuildContext context) {
             
             return Scaffold(
+              body: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  SizedBox(
+                    height:80 ,
+                    width: 80,
+                    child: Container(
+                      color:Colors.purple
+                    ),
+                    ),
+                    SizedBox(
+                    height:80 ,
+                    width: 80,
+                    child: Container(
+                      color:Colors.red
+                    ),
+                    ),
+                    SizedBox(
+                    height:80 ,
+                    width: 80,
+                    child: Container(
+                      color:Colors.green
+                    ),
+                    )
+
+
+                ]
+              
+              
+              
+              
+              
+              
+              ,),
               appBar: AppBar(
               centerTitle: true,
               title: Text("Welocome to flutter",
@@ -26,98 +60,7 @@ class homePage extends StatelessWidget{
                    )
                 ),
               ),
-              body:
-                   Column(
-                     
-                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                     
-                     children: <Widget>[
-                      Container( // Container 1
-                        height:80 ,
-                        width: double.infinity,
-                        color:Colors.black,
-                        child:Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget>[
-
-                            Container(
-                              width:80 ,
-                              height:double.infinity,
-                              color:Colors.yellowAccent
-                              ),
-                            Container(
-                              width:80 ,
-                              height:double.infinity,
-                              color:Colors.red
-                              ),
-                              Container(
-                              width:80 ,
-                              height:double.infinity,
-                              color:Colors.purple
-                              )
-
-                        ],)
-                        ),
-                        Container(
-                          child:Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: <Widget>[
-                                   Container(
-                              width:80 ,
-                              height:double.infinity,
-                              color:Colors.yellowAccent
-                              ),
-                            Container(
-                              width:80 ,
-                              height:double.infinity,
-                              color:Colors.red
-                              ),
-                              Container(
-                              width:80 ,
-                              height:double.infinity,
-                              color:Colors.purple
-                              )
-                            ],
-
-
-
-                          ),//Container 2
-                        height:80 ,
-                        width: double.infinity,
-                        color:Colors.red
-                        ),
-                        Container(
-                          child:Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-
-                            children: <Widget>[
-                                   Container(
-                              width:80 ,
-                              height:double.infinity,
-                              color:Colors.yellowAccent
-                              ),
-                            Container(
-                              width:80 ,
-                              height:double.infinity,
-                              color:Colors.red
-                              ),
-                              Container(
-                              width:80 ,
-                              height:double.infinity,
-                              color:Colors.purple
-                              )
-                            ],
-                          ),//container3
-                        height:80 ,
-                        width: double.infinity,
-                        color:Colors.yellow
-                        ),
-              ],)
-              
-             
-                  
-                  );
-               
+            );
   }
 
 }
